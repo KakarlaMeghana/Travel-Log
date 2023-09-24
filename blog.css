@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+  img{
+      padding:2%;
+
+      }
+      .reg{ 
+              background-color:rgb(175, 212, 228);
+              color:white;
+              border: 1px solid ;
+              outline:none;
+              border-radius:10px;
+              padding : 10px;
+              margin:10px 20px;
+              margin-left: 1000px;
+              
+              }
+   

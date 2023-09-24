@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="slides-style.css" />
+<style>
+  p{
+    padding-right: 10%;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black"  style="text-align:center">
+  <a href="home.php" class="w3-button w3-bar-item">Home</a>
+  <a href="#home-section" class="w3-button w3-bar-item">Details</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+</nav>
+<div class="Slides">
+
+<div class="mySlides fade">
+ 
+  <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/the-nilgiri-mountain-railway-1653904566_39d2e58ed7221faa8057.webp" style="width:100%;height:500px;">
+ 
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/avalanche-lake-1656249576_412ef585e840cc22ed79.webp" style="width:100%;height:500px;">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/filestore/iyexxi9cy5shtck8rowrdnwn7hn3_shutterstock_1291370890.jpg" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://thenomadicguy.files.wordpress.com/2015/06/government-rose-garden-ooty.jpg" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Le_mus%C3%A9e_du_th%C3%A9_%28Munnar%2C_Inde%29_%2813694719014%29.jpg" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://media.tripinvites.com/places/ooty/doddabetta-peak/view-from-doddabetta-peak-in-ooty.jpg" style="width:100%;height:500px;">
+ 
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  
+</div>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide" style="text-align:center">Places that are covered in this package</h2>
+  <p class="w3-opacity" style="text-align:center"><i>We love travelling</i></p>
+  
+</section>
+<section id="home-section">
+DETAILS
+<br>
+<b>Images displayed above are the following places:</b>
+<br><br>
+1.Nilgiri Mountain Railway<br>
+2.Avalanche Lake<br>
+3.Pykara Falls<br>
+4.Government Rose Garden<br>
+5.Tea Museum <br>
+6.Doddabetta Peak<br> <br>
+<img src="https://fanaticbuff.com/wp-content/uploads/2022/04/Untitled-1-56.jpg" align="left" height="250px" width="500px">
+
+<p>
+<b>Staying :</b>
+<br>
+Aventura Fern Hill<br>
+<b>Facilities:</b><br>
+Free Wifi<br>
+Swimming Pool<br>
+Free BreakFast<br></p>
+
+</section>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="slides-style.css" />
+<style>
+  p{
+    padding-right: 10%;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black"  style="text-align:center">
+  <a href="home.php" class="w3-button w3-bar-item">Home</a>
+  <a href="#home-section" class="w3-button w3-bar-item">Details</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+</nav>
+<div class="Slides">
+
+<div class="mySlides fade">
+ 
+  <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1065727913_20190822150731.jpg" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://www.joysoftraveling.com/wp-content/uploads/2019/12/3-11-800x533-2-768x512.jpg" style="width:100%;height:500px;">
+ 
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1314723038_20190822145625.jpg" style="width:100%;height:500px;">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="https://media.istockphoto.com/id/1145709125/photo/beautiful-sunset-by-the-arabian-sea-in-the-north-goa.jpg?s=612x612&w=0&k=20&c=T51lWYZmk47hTqrym6N7OK9X-lVX4NC2FXLymVYQ6AQ=" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src=" https://i.pinimg.com/originals/cb/b0/93/cbb0932c7e9829997c2ce238b66305cf.jpg" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://media.istockphoto.com/id/859845026/photo/beach-in-goa-india.jpg?b=1&s=170667a&w=0&k=20&c=sESihqkRg7XFBVnnAw8FTL2dCoOCB1-juq29Vs6iwE8=" style="width:100%;height:500px;">
+ 
+</div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  
+</div>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide" style="text-align:center">Places that are covered in this package</h2>
+  <p class="w3-opacity" style="text-align:center"><i>We love travelling</i></p>
+  
+</section>
+<section id="home-section">
+DETAILS
+<br>
+<b>Images displayed above are the following places:</b>
+<br><br>
+1.Aguda Fort <br>
+2.Cavolessmi Beach<br>
+3.Calangute Beach <br>
+4.Varca Beach <br>
+5.Dudhsagar Water Falls <br>
+6.Baga Beach<br> <br>
+<img src="https://pix10.agoda.net/hotelImages/169/169050/169050_16092019450046690913.jpg?ca=6&ce=1&s=1024x768" align="left" height="250px" width="500px">
+
+<p>
+<b>Staying :</b>
+<br>
+Resort Rio<br>
+<b>Facilities:</b><br>
+Free Wifi<br>
+Swimming Pool<br>
+Free BreakFast<br></p>
+
+</section>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

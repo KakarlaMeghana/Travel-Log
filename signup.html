@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signupcss.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <title>Transparent form</title>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <div class="btn">
+        <button class="signUpBtn">SIGN UP</button>
+        <button class="loginBtn"><a href="loginpage.php" style="color:white;text-decoration:none">LOG IN</a></button>
+      </div>
+      <form class="signUp" action="Register.php" onsubmit="return validate()" method="post">
+        <div class="formGroup">
+          <input type="text" id="userName" placeholder="User Name" name="username" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="email" id="mail" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" placeholder="Password" name="pwd" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">I agree with term & conditions</span>
+        </div>
+        <div class="formGroup">
+          <button type="submit" id="Submit"name="signup" class="btn2">REGISTER</button>
+        </div>
+ 
+      </form> 
+    </div>
+  </div>
+ 
+  <script type="text/javascript">
+    function validate() {
+      var name =
+        document.getElementById('userName').value;
+      var email =
+        document.getElementById('mail').value;
+      var password =
+        document.getElementById('password').value;
+      var confpass =
+        document.getElementById('confirmPassword').value;
+      var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; //Javascript reGex for Email Validation.
+                  
+      var regName = /\d+$/g;								 // Javascript reGex for Name validation
+    
+      if (name == "" || regName.test(name)) {
+        alert("Please enter your name properly.");
+        return false;
+      } 
+      if (email == "" || !regEmail.test(email)) {
+        alert("Please enter a valid e-mail address.");
+        return false;
+      }
+      if (password == "") {
+        alert("Please enter your password");
+        return false;
+      }
+      else{  
+          var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+          if(!password.match(passw)) 
+          { 
+            alert('Password must be in between 8 to 15 characters and must contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character');
+            return false;
+          }
+      }
+      if(password!=confpass)
+      {
+        alert("Password should be same");
+        return false;
+      }
+      return true;
+    }
+  </script>
+  
+</body>
+ 
+</html>
+
+

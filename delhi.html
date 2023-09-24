@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="slides-style.css" />
+<style>
+  p{
+    padding-right: 10%;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black"  style="text-align:center">
+  <a href="home.php" class="w3-button w3-bar-item">Home</a>
+  <a href="#home-section" class="w3-button w3-bar-item">Details</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+</nav>
+<div class="Slides">
+
+  <div class="mySlides fade">
+    <img src="https://www.10wallpaper.com/wallpaper/2880x1800/1812/Taj_Mahal_Agra_India_2018_Architectural_photography_2880x1800.jpg"style="width:100%;height:500px">
+ </div>
+ <div class="mySlides fade">
+  
+   <img src="https://akshardham.com/newdelhi/wp-content/uploads/2015/05/akshardham_monument_with_sarovar-002.jpg"style="width:100%;height:500px">
+  
+ </div>
+ 
+ 
+ 
+ <div class="mySlides fade">
+  
+   <img src="https://blog.thomascook.in/wp-content/uploads/2020/08/humayun-tomb-delhi-banner.jpg"style="width:100%;height:500px">
+ 
+ </div>
+ <div class="mySlides fade">
+ 
+   <img src="https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/Lotus-temple.jpg"style="width:100%;height:500px">
+  
+ </div>
+ <div class="mySlides fade">
+    <img src="https://www.mapsofindia.com/ci-moi-images/my-india/isckon-temple.jpg"style="width:100%;height:500px">
+ </div>
+ 
+ 
+ 
+ 
+
+</div>
+<br>
+
+<div style="text-align:center">
+  
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  
+</div>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide" style="text-align:center">Places that are covered in this package</h2>
+  <p class="w3-opacity" style="text-align:center"><i>We love travelling</i></p>
+  
+</section>
+<section id="home-section">
+DETAILS
+<br>
+<b>Images displayed above are the following places:</b>
+<br><br>
+1.Taj Mahal <br>
+2.Akshardham Temple <br>
+3.Humayun Tomb <br>
+4.Lotus Temple <br>
+5.Iskon Temple <br>
+<br> <br>
+<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/387929154.jpg?k=961ee0166905abb3c87f21cf1046fd9185a4d53189cd744a0bb64a4cd7f32e4d&o=&hp=1" align="left" height="250px" width="500px">
+
+<p>
+<b>Staying :</b>
+<br>
+GrandNew Delhi Hotel<br>
+<b>Facilities:</b><br>
+Free Wifi<br>
+Swimming Pool<br>
+Free BreakFast<br></p>
+
+</section>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

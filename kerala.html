@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="slides-style.css" />
+<style>
+  p{
+    padding-right: 10%;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black"  style="text-align:center">
+  <a href="home.php" class="w3-button w3-bar-item">Home</a>
+  <a href="#home-section" class="w3-button w3-bar-item">Details</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+</nav>
+<div class="Slides">
+
+<div class="mySlides fade">
+ 
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Munnar_hillstation_kerala.jpg/1200px-Munnar_hillstation_kerala.jpg" style="width:100%;height:500px;">
+ 
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Alleppey_beach.jpg/1200px-Alleppey_beach.jpg" style="width:100%;height:500px;">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="https://www.kumarakom.com/files/menuboxes/594484057.jpg" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://w0.peakpx.com/wallpaper/936/939/HD-wallpaper-sree-padmanabha-swamy-kerala-black-yellow-padmanabha-india-trivandrum-sree-swamy-gold-hindu-god-snake-vishnu.jpg" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://images.unsplash.com/photo-1524338198850-8a2ff63aaceb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGF0aGlyYXBhbGx5JTIwd2F0ZXJmYWxsfGVufDB8fDB8fA%3D%3D&w=1000&q=80" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://templesofindia.org/assets/compressed/5b781703c0f2a18bf4b9c2bfff903c88_219.jpg" style="width:100%;height:500px;">
+ 
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  
+</div>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide" style="text-align:center">Places that are covered in this package</h2>
+  <p class="w3-opacity" style="text-align:center"><i>We love travelling</i></p>
+  
+</section>
+<section id="home-section">
+DETAILS
+<br>
+<b>Images displayed above are the following places:</b>
+<br><br>
+1.Munnar Hill Station <br>
+2.Alappuzha (Alleppey) <br>
+3.Kumarakom Bird Sanctuary <br>
+4.Sri PadmanabhaSwamy Temple <br>
+5.Athirappilly Water Falls <br>
+6.Padiyanoor Devi Temple <br> <br>
+<img src="https://lh3.googleusercontent.com/p/AF1QipPISoUygC9xHhQVZreHD3a6UY3eanQktYfOof4t=w592-h404-n-k-rw-no-v1" align="left" height="250px" width="500px">
+
+<p>
+<b>Staying :</b>
+<br>
+Taj Kumarakom  Resort<br>
+<b>Facilities:</b><br>
+Free Wifi<br>
+Swimming Pool<br>
+Free BreakFast<br></p>
+
+</section>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

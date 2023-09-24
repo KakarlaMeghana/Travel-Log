@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="slides-style.css" />
+<style>
+  p{
+    padding-right: 10%;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black"  style="text-align:center">
+  <a href="home.php" class="w3-button w3-bar-item">Home</a>
+  <a href="#home-section" class="w3-button w3-bar-item">Details</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+</nav>
+<div class="Slides">
+
+<div class="mySlides fade">
+ 
+  <img src="https://media.istockphoto.com/id/905049262/photo/varanasi-at-sunrise.jpg?s=612x612&w=0&k=20&c=ooiOJzZ4vYe8paql2eHINqyIW_3JX9Hm1FelZ9kBkZ8=" style="width:100%;height:500px;">
+
+</div>
+
+<div class="mySlides fade">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Evening_Ganga_Aarti_at_Dashashwamedh_Ghat.JPG/2560px-Evening_Ganga_Aarti_at_Dashashwamedh_Ghat.JPG" style="width:100%;height:500px;">
+
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="https://c4.wallpaperflare.com/wallpaper/149/19/767/silhouette-photo-of-tree-during-golden-hour-wallpaper-preview.jpg" style="width:100%;height:500px;">
+ 
+</div>
+
+<div class="mySlides fade">
+
+  <img src="https://www.trawell.in/admin/images/upload/195238892Birla_Temple.jpg" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://varanasi.tourismindia.co.in/images/places-to-visit/headers/dashashwamedh-ghat-varanasi-tourism-entry-fee-timings-holidays-reviews-header.jpg" style="width:100%;height:500px;">
+ 
+</div>
+
+<div class="mySlides fade">
+
+  <img src="https://c1.wallpaperflare.com/preview/448/483/831/sarnath-varanasi-india-buddha.jpg" style="width:100%;height:500px;">
+ 
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  
+</div>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide" style="text-align:center">Places that are covered in this package</h2>
+  <p class="w3-opacity" style="text-align:center"><i>We love travelling</i></p>
+  
+</section>
+<section id="home-section">
+DETAILS
+<br>
+<b>Images displayed above are the following places:</b>
+<br><br>
+1.Ganga River <br>
+2.Ganga Aarthi<br>
+3.Assi Ghat <br>
+4.Sri Kashi Vishwanath Temple <br>
+5.Dasaswamedh Ghat <br>
+6.Saranath<br> <br>
+<img src="https://cdn1.goibibo.com/voy_mmt/t_g/htl-imgs/202210181715459478-b76861c642f411ed9fa10a58a9feac02.jpg" align="left" height="250px" width="500px">
+
+<p>
+<b>Staying :</b>
+<br>
+Green Banaras Resort<br>
+<b>Facilities:</b><br>
+Free Wifi<br>
+Swimming Pool<br>
+Free BreakFast<br></p>
+
+</section>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

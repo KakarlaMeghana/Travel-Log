@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="slides-style.css" />
+<style>
+  p{
+    padding-right: 10%;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black"  style="text-align:center">
+  <a href="home.php" class="w3-button w3-bar-item">Home</a>
+  <a href="#home-section" class="w3-button w3-bar-item">Details</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+</nav>
+<div class="Slides">
+
+<div class="mySlides fade">
+ 
+  <img src="https://trendaroundus.in/wp-content/uploads/2021/01/Best-places-to-visit-in-Manali-himachal-pradesh.jpg" style="width:100%;height:500px;">
+ 
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="https://trendaroundus.in/wp-content/uploads/2021/01/Hidimba-Devi-temple-in-Manali-1.jpg" style="width:100%;height:500px;">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="https://trendaroundus.in/wp-content/uploads/2021/01/Manali-Sanctuary-in-Himachal-Pradesh.jpg" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://trendaroundus.in/wp-content/uploads/2021/01/Jogini-Fall-in-Manali.jpg" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/01/Jibhi-Tirthan-Valley-Himachal.jpg?w=1200&ssl=1" style="width:100%;height:500px;">
+ 
+</div>
+<div class="mySlides fade">
+
+  <img src="https://shoblapineroyale.com/wp-content/uploads/2020/06/bhrigu-lake-shobla-pine-royale-manali.jpg" style="width:100%;height:500px;">
+ 
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  
+</div>
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide" style="text-align:center">Places that are covered in this package</h2>
+  <p class="w3-opacity" style="text-align:center"><i>We love travelling</i></p>
+  
+</section>
+<section id="home-section">
+DETAILS
+<br>
+<b>Images displayed above are the following places:</b>
+<br><br>
+1.Sollang Valley<br>
+2.Hidambi Temple <br>
+3.Manali Sanctuary <br>
+4.Jogini Falls <br>
+5.Tirthan Valley<br>
+6.Bhirugu Lake <br> <br>
+<img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/421912243.jpg?k=430a9ae10bebef3225a011d29352599f9a971f631b885f531203a094ede0fb5a&o=&hp=1" align="left" height="250px" width="500px">
+
+<p>
+<b>Staying :</b>
+<br>
+Himalayan Riverside Resort<br>
+<b>Facilities:</b><br>
+Free Wifi<br>
+Swimming Pool<br>
+Free BreakFast<br></p>
+
+</section>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
